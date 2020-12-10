@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <style type="text/css">
+
+ * { 
+        cursor: none!important;
+} 
+        #im {
+            position: absolute;
+            width: 66px;
+        }
+    </style>
+</head>
+ 
+<body>
+    <img src="http://php.khpharm.com/Modules/Lottery/templates/front/threedimensional/assets/images/zd_cion17.png" id="im" alt="" />
+    <script type="text/javascript">
+        var imobj = document.getElementById("im");
+        document.onmousemove = function (e) {
+            imobj.style.left = e.clientX - 35 + "px";
+            imobj.style.top = e.clientY -20+ "px";
+        }
+    </script>
+</body>
+ 
+</html>
